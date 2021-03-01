@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid red;
+   
+}
+img {
+   max-width: 100%;
+}
+  /* <!-- section-shadow-card start------------------------------------------------------------------------> */
+.services {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.s-heading {
+    text-align:center;
+}
+.s-heading h1 {
+    color: #576975;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0px;
+}
+.s-heading p {
+    color: rgba(87,105,117,0.6);
+    font-size: 24px;
+    margin: 5px;
+    text-align: center;
+}
+.s-heading  span  {
+    color:#4a90e2;
+}
+.s-box-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+
+}
+.s-box img {
+    height: 75px;
+    object-fit: cover;
+}
+.s-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    padding: 20px 25px;
+    margin: 30px;
+    position: relative;
+
+}
+.s-box h1 {
+    color: #576975;
+    letter-spacing: 1px;
+    font-size: 1,5rem;
+    margin-top: 20px;
+}
+.s-box p {
+    color:rgba(87,105,117,0.9);
+    text-align: center;
+    margin-top: 12px;
+}
+.s-btn {
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(74,144,226,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #576975;
+    margin-top:15px;
+}
+.s-box:hover {
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.8);
+    transition: all easee 0.3s;
+}
+.s-btn:hover {
+    background-color: #4a90e2;
+    border: 1px solid #4a4ce2;
+    color: #ffffff;
+    transition: all ease 0.5s;
+}
+.bar {
+    width: 100px;
+    height: 6px;
+    position: absolute;
+    left: 50%;
+    top: 27px;
+    transform: translateX(-50%, 0);
+}
+ .bar:hover {
+   
+    background-color: #4a90e2;
+    border-radius: 0px 0px 10px 10px;
+}
+/* <!-- section-shadow-card end----------------------------------------===================-> */
+
+
+/* <!------------------4-row section start-----------------------------------------------> */
+/* .four-row-section {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+.four-row-section > div {
+    border: 2px solid black;
+    height: 200px;
+    width: 25%;
+  
+} */
+
+
+
+
+
+/* <!------------------4-row section end-----------------------------------------------> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------media-query start------------------------------------------------------------------------ */
+
+@media (max-width: 575px) {
+    .s-box-container {
+       
+        flex-direction: column-reverse;
+    }
+    .services {
+        height: auto;
+    }
+    
+    .s-box {
+        flex-grow: 1;
+        margin-top: -15px;
+    }
+   
+}
+@media (min-width: 576px) and (max-width: 767.99px) {
+    .container {
+        max-width: 570px;
+    }
+    .s-box-container {
+       
+        flex-direction: column-reverse;
+    }
+    .services {
+        height: auto;
+    }
+    
+    .s-box {
+        flex-grow: 1;
+    }
+    
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+   .container {
+       max-width: 760px;
+   }
+   .s-box-container {
+    flex-wrap: wrap;
+}
+.services {
+    height: auto;
+}
+
+.s-box {
+    flex-grow: 1;
+    margin-top: -50px;
+}
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.99px) {
+    .container{
+        max-width: 980px;
+    }
+    .s-box-container {
+        flex-wrap: wrap;
+    }
+    .services {
+        height: auto;
+    }
+    
+    .s-box {
+        flex-grow: 1;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1439.99px) {
+    .container {
+        max-width: 1170px;
+    }
+    
+    
+}
+/* -----------------------media-query end-------------------------------------------------------------- */
